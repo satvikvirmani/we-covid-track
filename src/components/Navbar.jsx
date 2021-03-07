@@ -61,7 +61,7 @@ class Navbar extends Component {
                         <FontAwesomeIcon icon={faGithub} />
                         </span>
                         <span>
-                            <a href="http://">Github</a>
+                            <a href="https://github.com/SatvikVirmani/we-covid-track">Github</a>
                         </span>
                     </button>
                     </div>

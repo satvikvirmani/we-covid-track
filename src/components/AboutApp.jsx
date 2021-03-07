@@ -84,7 +84,7 @@ class AboutApp extends Component {
                                         <FontAwesomeIcon icon={faGithub} />
                                     </span>
                                     <span>
-                                        <a href="/">Click here</a>
+                                        <a href="https://github.com/SatvikVirmani/we-covid-track">Click here</a>
                                     </span>
                                 </button>
                                 </div>
