@@ -6,6 +6,16 @@
   "keywords": [
     "WE","Covid","Corona","Covid Track","Pandemic"
   ],
+  "homepage": "https://github.com/SatvikVirmani/we-covid-track",
+  "bugs": {
+    "url" : "https://github.com/SatvikVirmani/we-covid-track/issues",
+    "email" : "virmanisatvik01@gmail.com"
+  },
+  "author": {
+    "name" : "Satvik Virmani",
+    "email" : "virmanisatvik01@gmail.com",
+    "url" : "https://satvikvirmani.github.io"
+  },
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
