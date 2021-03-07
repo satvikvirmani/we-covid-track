@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import mapboxgl from 'mapbox-gl';
  
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2F0dmlrdmlybWFuaSIsImEiOiJja2VqeGpiODExeGdyMnlveXN0NXIwNm02In0.MFR4gJp7jraf-bPV59eBjA';
+mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
  
 
 class Map extends Component {
