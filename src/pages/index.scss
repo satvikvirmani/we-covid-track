@@ -1,0 +1,300 @@
+@charset "utf-8";
+
+//Mapbox CSS
+
+@import "~mapbox-gl/dist/mapbox-gl.css";
+
+//Body
+
+$scheme-main: hsl(240°, 25%, 12%);
+
+//Navbar
+
+$navbar-item-color: hsl(240°, 15%, 75%);
+$navbar-item-hover-color: hsl(0, 0%, 96%);
+$navbar-item-hover-background-color: transparent;
+$navbar-item-active-color: hsl(0, 0%, 96%);
+$navbar-item-active-background-color: transparent;
+
+//Box
+
+$box-background-color: hsl(240°, 23%, 15%);
+$box-color: hsl(0, 0%, 96%);
+$box-radius: 16px;
+
+//Typography
+
+$title-color: hsl(0, 0%, 96%);
+$subtitle-color: hsl(240°, 15%, 75%);
+
+//Button
+$button-background-color: hsl(240°, 23%, 15%);
+$button-color: hsl(0, 0%, 96%);
+$button-hover-color: hsl(0, 0%, 96%);
+$button-focus-color: hsl(0, 0%, 96%);
+$button-active-color: hsl(0, 0%, 96%);
+$button-border-color: hsl(0, 0%, 48%);
+
+//Input
+$input-background-color: hsl(240°, 23%, 15%);
+$input-color: hsl(0, 0%, 96%);
+$input-border-color: hsl(0, 0%, 48%);
+
+//Dropdown
+$dropdown-content-background-color: hsl(240°, 23%, 15%);
+$dropdown-item-color: hsl(0, 0%, 96%);
+$dropdown-item-hover-background-color: hsl(240°, 24%, 21%);
+$dropdown-item-active-background-color: hsl(240°, 24%, 21%);
+$dropdown-item-hover-color: hsl(0, 0%, 96%);
+$dropdown-item-active-color: hsl(0, 0%, 96%);
+
+//Footer
+$footer-background-color: hsl(240°, 25%, 12%);
+$footer-color: hsl(0, 0%, 96%);
+
+//Error Message
+$message-header-background-color: hsl(240°, 25%, 12%);
+$message-background-color: hsl(240°, 24%, 21%);
+$message-header-color: hsl(0, 0%, 96%);
+$message-body-color: hsl(240°, 15%, 75%);
+//Link Colors
+
+a{
+	color: hsl(0, 0%, 96%) !important;
+	&:hover{
+		color: hsl(240°, 15%, 75%) !important;
+	}
+	&:active{
+		color: hsl(240°, 15%, 75%) !important;
+	}
+}
+
+//Content in About Page
+
+.content{
+	p{
+		color: hsl(0, 0%, 96%) !important;
+	}
+	.subtitle{
+		color: hsl(0, 0%, 96%) !important;
+	}
+}
+
+//Loader
+.placeholder-item {
+    border-radius: 4px;
+    height: 26px;
+    position: relative;
+    overflow: hidden;
+    background: rgb(23,23,38);
+}
+.placeholder-item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -150px;
+    top: 0;
+    height: 100%;
+    width: 150px;
+	animation: load 1s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+	background: rgb(23,23,38);
+	background: -moz-linear-gradient(90deg, rgba(23,23,38,1) 0%, rgba(182,182,201,1) 50%, rgba(23,23,38,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(23,23,38,1) 0%, rgba(182,182,201,1) 50%, rgba(23,23,38,1) 100%);
+	background: linear-gradient(90deg, rgba(23,23,38,1) 0%, rgba(182,182,201,1) 50%, rgba(23,23,38,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e6e6e6",endColorstr="#e6e6e6",GradientType=1);
+}
+@keyframes load {
+    from {
+        left: -150px;
+    }
+    to   {
+        left: 100%;
+    }
+}
+
+//MAIN ROW in Home
+.mainColumn{
+	width: 100%;
+}
+
+//Map
+.mapSection{
+	margin: 48px;
+	border: 1px solid hsl(0, 0%, 48%);
+	overflow: hidden;
+	border-radius: 16px;
+}
+@media (max-width: 540px){
+	.mapSection{
+		margin: 8px;
+		border: 1px solid hsl(0, 0%, 48%);
+		overflow: hidden;
+		border-radius: 16px;
+	}
+}
+.mapboxgl-popup {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	will-change: transform;
+    padding: 0;
+	pointer-events: none;
+	width: 200px;
+	background: none;
+}
+.mapboxgl-popup-anchor-top,
+.mapboxgl-popup-anchor-top-left,
+.mapboxgl-popup-anchor-top-right {
+	flex-direction: column
+}
+
+.mapboxgl-popup-anchor-bottom,
+.mapboxgl-popup-anchor-bottom-left,
+.mapboxgl-popup-anchor-bottom-right {
+	flex-direction: column-reverse
+}
+
+.mapboxgl-popup-anchor-left {
+	flex-direction: row
+}
+
+.mapboxgl-popup-anchor-right {
+	flex-direction: row-reverse
+}
+
+.mapboxgl-popup-tip {
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	z-index: 1
+}
+
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
+	align-self: center;
+	border-top: none;
+	border-bottom-color: hsl(0, 0%, 48%)
+}
+
+.mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip {
+	align-self: flex-start;
+	border-top: none;
+	border-left: none;
+	border-bottom-color: hsl(0, 0%, 48%)
+}
+
+.mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
+	align-self: flex-end;
+	border-top: none;
+	border-right: none;
+	border-bottom-color: hsl(0, 0%, 48%)
+}
+
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+	align-self: center;
+	border-bottom: none;
+	border-top-color: hsl(0, 0%, 48%)
+}
+
+.mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip {
+	align-self: flex-start;
+	border-bottom: none;
+	border-left: none;
+	border-top-color: hsl(0, 0%, 48%)
+}
+
+.mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
+	align-self: flex-end;
+	border-bottom: none;
+	border-right: none;
+	border-top-color: hsl(0, 0%, 48%)
+}
+.mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
+	align-self: center;
+	border-left: none;
+	border-right-color: hsl(0, 0%, 48%)
+}
+
+.mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
+	align-self: center;
+	border-right: none;
+	border-left-color: hsl(0, 0%, 48%)
+}
+
+.mapboxgl-popup-close-button {
+	position: absolute !important;
+	right: 10px;
+	top: 10px;
+	border: 0;
+	border-radius: 0 3px 0 0;
+	cursor: pointer;
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+}
+
+.mapboxgl-popup-close-button:hover {
+	background-color: rgba(0, 0, 0, .05)
+}
+
+.mapboxgl-popup-content {
+	position: relative;
+	background: hsl(240°, 23%, 15%);
+	border-radius: 3px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    padding: 10px 10px 10px 10px;
+	pointer-events: auto;
+	border: 1px solid hsl(0, 0%, 48%);
+	border-radius: 6px;
+}
+
+//Delete button in popup
+.delete{
+	color: hsl(240°, 15%, 75%);
+	background-color: hsl(240°, 15%, 75%) !important;
+}
+
+//Popup image
+.popup-image{
+	width: 120px;
+	border: 1px solid hsl(0, 0%, 48%);
+	border-radius: 16px;
+	overflow: hidden;
+	margin-bottom: 1.5rem;
+}
+
+.mapboxgl-popup-anchor-top-left .mapboxgl-popup-content {
+	border-top-left-radius: 0
+}
+
+.mapboxgl-popup-anchor-top-right .mapboxgl-popup-content {
+	border-top-right-radius: 0
+}
+
+.mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-content {
+	border-bottom-left-radius: 0
+}
+
+.mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-content {
+	border-bottom-right-radius: 0
+}
+
+.mapboxgl-popup-track-pointer {
+	display: none
+}
+
+.mapboxgl-popup-track-pointer * {
+	pointer-events: none;
+	user-select: none
+}
+
+.mapboxgl-map:hover .mapboxgl-popup-track-pointer {
+	display: flex
+}
+
+.mapboxgl-map:active .mapboxgl-popup-track-pointer {
+	display: none
+}
+
+//Bulma defaults
+@import "~bulma/bulma.sass";
