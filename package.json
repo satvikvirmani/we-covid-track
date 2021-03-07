@@ -4,17 +4,21 @@
   "private": true,
   "description": "A simple Covid 19 informative website",
   "keywords": [
-    "WE","Covid","Corona","Covid Track","Pandemic"
+    "WE",
+    "Covid",
+    "Corona",
+    "Covid Track",
+    "Pandemic"
   ],
   "homepage": "https://github.com/SatvikVirmani/we-covid-track",
   "bugs": {
-    "url" : "https://github.com/SatvikVirmani/we-covid-track/issues",
-    "email" : "virmanisatvik01@gmail.com"
+    "url": "https://github.com/SatvikVirmani/we-covid-track/issues",
+    "email": "virmanisatvik01@gmail.com"
   },
   "author": {
-    "name" : "Satvik Virmani",
-    "email" : "virmanisatvik01@gmail.com",
-    "url" : "https://satvikvirmani.github.io"
+    "name": "Satvik Virmani",
+    "email": "virmanisatvik01@gmail.com",
+    "url": "https://satvikvirmani.github.io"
   },
   "scripts": {
     "develop": "gatsby develop",

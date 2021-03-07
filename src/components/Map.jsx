@@ -70,7 +70,7 @@ class Map extends Component {
                             })
                             var map = new mapboxgl.Map({
                                 container: this.map,
-                                style: 'mapbox://styles/satvikvirmani/cklgg8rup7osw17ns4o2fdoyw',
+                                style: 'mapbox://styles/mapbox/dark-v10',
                                 center: [78.9629, 20.5937],
                                 zoom: 2
                             });

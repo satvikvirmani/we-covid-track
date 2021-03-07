@@ -226,11 +226,13 @@ a{
 	right: 10px;
 	top: 10px;
 	border: 0;
-	border-radius: 0 3px 0 0;
 	cursor: pointer;
     height: 30px;
     width: 30px;
-    font-size: 0;
+    font-size: 30px;
+	color: hsl(0, 0%, 96%);
+	display: grid;
+	place-items: center;
 }
 
 .mapboxgl-popup-close-button:hover {
