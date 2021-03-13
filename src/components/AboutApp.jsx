@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faGithub, faMedium } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import logo from '../images/about.jpg'
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 class AboutApp extends Component {
     state = {  }
@@ -29,30 +30,30 @@ class AboutApp extends Component {
                                        <div className="columns is-mobile">
                                             <div className="column has-text-centered">
                                                 <p className="title is-5 is-clickable">
-                                                    <a href="https://www.facebook.com/satvik.virmani.9/">
+                                                    <OutboundLink href="https://www.facebook.com/satvik.virmani.9/">
                                                         <FontAwesomeIcon icon={faFacebook} size="lg" />
-                                                    </a>
+                                                    </OutboundLink>
                                                 </p>
                                                 </div>
                                             <div className="column has-text-centered">
                                                 <p className="title is-5 is-clickable">
-                                                    <a href="https://www.instagram.com/satvikvirmani/">
+                                                    <OutboundLink href="https://www.instagram.com/satvikvirmani/">
                                                         <FontAwesomeIcon icon={faInstagram} size="lg" />
-                                                    </a>
+                                                    </OutboundLink>
                                                 </p>
                                                 </div>
                                             <div className="column has-text-centered">
                                                 <p className="title is-5 is-clickable">
-                                                    <a href="https://github.com/SatvikVirmani">
+                                                    <OutboundLink href="https://github.com/SatvikVirmani">
                                                         <FontAwesomeIcon icon={faGithub} size="lg" />
-                                                    </a>
+                                                    </OutboundLink>
                                                 </p>
                                                 </div>
                                             <div className="column has-text-centered">
                                                 <p className="title is-5 is-clickable">
-                                                    <a href="https://satvikvirmani.medium.com/">
+                                                    <OutboundLink href="https://satvikvirmani.medium.com/">
                                                         <FontAwesomeIcon icon={faMedium} size="lg" />
-                                                    </a>
+                                                    </OutboundLink>
                                                 </p>
                                                 </div>
                                        </div>
@@ -84,7 +85,7 @@ class AboutApp extends Component {
                                         <FontAwesomeIcon icon={faGithub} />
                                     </span>
                                     <span>
-                                        <a href="https://github.com/SatvikVirmani/we-covid-track">Click here</a>
+                                        <OutboundLink href="https://github.com/SatvikVirmani/we-covid-track">Click here</OutboundLink>
                                     </span>
                                 </button>
                                 </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 class Footer extends Component {
     state = { 
@@ -16,7 +17,7 @@ class Footer extends Component {
             <footer className="footer p-4">
                 <div className="content has-text-centered mx-4">
                     <p className="subtitle is-6">
-                        Copyright &#9400; {this.state.currentYear} Covid Track by <a href="http://satvikvirmani.github.io" className="title is-6">Satvik Virmani</a>
+                        Copyright &#9400; {this.state.currentYear} Covid Track by <OutboundLink href="http://satvikvirmani.github.io" className="title is-6">Satvik Virmani</OutboundLink>
                     </p>
                 </div>
             </footer>

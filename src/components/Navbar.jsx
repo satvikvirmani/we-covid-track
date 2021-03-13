@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import logo from '../images/Covid Track@4x.png'
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 class Navbar extends Component {
     constructor(props) {
@@ -61,7 +62,7 @@ class Navbar extends Component {
                         <FontAwesomeIcon icon={faGithub} />
                         </span>
                         <span>
-                            <a href="https://github.com/SatvikVirmani/we-covid-track">Github</a>
+                            <OutboundLink href="https://github.com/SatvikVirmani/we-covid-track">Github</OutboundLink>
                         </span>
                     </button>
                     </div>
