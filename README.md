@@ -2,7 +2,7 @@
 
 ### Contibute
 
-1.  **Clone the website**
+1.  **Clone the repository**
 
     ```shell
     git clone https://github.com/SatvikVirmani/we-covid-track/
@@ -17,8 +17,6 @@
     ```
 
 3. **Make a pull request**
-
-To publish changes just push to repository
 
 ### Bugs
 
