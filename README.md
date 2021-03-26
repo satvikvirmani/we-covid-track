@@ -1,12 +1,6 @@
-<p align="center">
-  <a href="https://wecovidtrack.netlify.app">
-  </a>
-</p>
-<h1 align="center">
-  Covid Track
-</h1>
+![Covid Track Logo](https://github.com/SatvikVirmani/we-covid-track/blob/master/src/images/Covid%20Track%404x.png)
 
-## Contibute
+### Contibute
 
 1.  **Clone the website**
 
@@ -26,6 +20,6 @@
 
 To publish changes just push to repository
 
-## Bugs
+### Bugs
 
 Report bugs in issues 
