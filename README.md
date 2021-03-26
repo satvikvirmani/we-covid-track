@@ -2,7 +2,7 @@
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-green.svg" />
   </a>
   <a href="https://twitter.com/SatvikVirmani" target="_blank">
     <img alt="Twitter: SatvikVirmani" src="https://img.shields.io/twitter/follow/SatvikVirmani.svg?style=social" />
@@ -18,6 +18,8 @@
 ## Install
 
 ```sh
+git clone https://github.com/SatvikVirmani/we-covid-track.git
+cd we-covid-track
 npm install
 ```
 
