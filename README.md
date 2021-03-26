@@ -1,4 +1,4 @@
-![Covid Track Logo](https://github.com/SatvikVirmani/we-covid-track/blob/master/logo.png)
+![Covid Track Logo](./logo.png)
 
 ### Contibute
 
