@@ -98,7 +98,7 @@ class Country extends Component {
     }
     render() { 
         return ( 
-            <div className="column m-6 box">
+            <div className="column m-4 box">
                 <div className="columns m-4">
                     <div className="column is-6 is-flex is-align-items-center">
                         <p className="title is-4">
