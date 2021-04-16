@@ -21,8 +21,9 @@ class HomeApp extends Component {
               </div>
             </section>
             <section>
-              <div className="columns is-6 mainColumn">
+              <div className="columns is-6 mainColumn is-vcentered">
               <Global />
+              <div className="className mt-6"></div>
               <Country />
             </div>
             </section>

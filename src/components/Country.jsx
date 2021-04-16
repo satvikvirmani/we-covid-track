@@ -13,7 +13,8 @@ class Country extends Component {
         currentCode: '',
         ipError: false,
         data: [],
-        fetchError: false
+        fetchError: false,
+        todayBoxToggleCY: 'is-hidden'
      }
 
      componentDidMount(){
@@ -96,9 +97,20 @@ class Country extends Component {
             fetchError: false
         })
     }
+    toggleTodayBoxCY = () => {
+        if (this.state.todayBoxToggleCY === 'is-hidden') {
+            this.setState({
+                todayBoxToggleCY: '',
+            })
+        } else {
+            this.setState({
+                todayBoxToggleCY: 'is-hidden',
+            })
+        }
+    }
     render() { 
         return ( 
-            <div className="column m-4 box">
+            <div className="column mx-4 my-5 box">
                 <div className="columns m-4">
                     <div className="column is-6 is-flex is-align-items-center">
                         <p className="title is-4">
@@ -178,6 +190,58 @@ class Country extends Component {
                             <div className="container">
                             {this.state.fetching ? <Loader /> :  <h1 className="title is-4 has-text-left">{parseInt(this.state.data.deaths).toLocaleString()}</h1>}
                             </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button className="button is-fullwidth" onClick={this.toggleTodayBoxCY}>View Today Stats</button>
+                <div className={this.state.todayBoxToggleCY}>
+                    <div className="columns m-4">
+                        <div className="column">
+                            <div className="columns is-mobile">
+                                <div className="column is-3 is-flex is-align-items-center is-justify-content-center">
+                                    <FontAwesomeIcon icon={faViruses} size='2x' />
+                                </div>
+                                <div className="column is-9">
+                                    <div className="container">
+                                        <h1 className="subtitle is-5 has-text-left">Today Cases</h1>
+                                    </div>
+                                    <div className="container">
+                                        {this.state.fetching ? <Loader /> : <h1 className="title is-4 has-text-left">{parseInt(this.state.data.todayCases).toLocaleString()}</h1>}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="column">
+                            <div className="columns is-mobile">
+                                <div className="column is-3 is-flex is-align-items-center is-justify-content-center">
+                                    <FontAwesomeIcon icon={faVirusSlash} size='2x' />
+                                </div>
+                                <div className="column is-9">
+                                    <div className="container">
+                                        <h1 className="subtitle is-5 has-text-left">Today Recovered</h1>
+                                    </div>
+                                    <div className="container">
+                                        {this.state.fetching ? <Loader /> : <h1 className="title is-4 has-text-left">{parseInt(this.state.data.todayRecovered).toLocaleString()}</h1>}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="columns m-4 is-centered">
+                        <div className="column is-half">
+                            <div className="columns is-mobile">
+                                <div className="column is-3 is-flex is-align-items-center is-justify-content-center">
+                                    <FontAwesomeIcon icon={faVirus} size='2x' />
+                                </div>
+                                <div className="column is-9">
+                                    <div className="container">
+                                        <h1 className="subtitle is-5 has-text-left">Today Deaths</h1>
+                                    </div>
+                                    <div className="container">
+                                        {this.state.fetching ? <Loader /> : <h1 className="title is-4 has-text-left">{parseInt(this.state.data.todayDeaths).toLocaleString()}</h1>}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
