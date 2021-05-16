@@ -110,7 +110,7 @@ class CountryInput extends React.Component {
                     ref={el => this.input = el}
                     autocomplete="off"/> {matches.length > 0 && (
                     <div
-                        className="ring-2 ring-purple-400 h-64 overflow-y-scroll absolute grid grid-cols-1 auto-rows-min items-start w-full top-8 py-2 dark:bg-gray-800 bg-gray-50">
+                        className="ring-2 ring-purple-400 h-64 overflow-y-scroll absolute grid grid-cols-1 auto-rows-min items-start w-60 top-8 py-2 dark:bg-gray-800 bg-gray-50">
                         {matches.map((match, index) => (
                             <a
                                 className={`truncate px-2 h-8 dark:hover:bg-gray-700 hover:bg-gray-200 hover:font-bold dark:hover:font-bold hover:text-purple-500 dark:hover:text-purple-500 dark:text-gray-400 ${index === activeIndex
