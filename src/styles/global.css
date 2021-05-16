@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .choices {
+    @apply ring-2 ring-purple-500 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 text-base rounded-lg !important;
+  }
+}
+
+@layer components {
+  .choices__inner {
+    @apply bg-transparent border-0 text-base !important;
+  }
+}
+
+@layer components {
+  .choices__input {
+    @apply bg-transparent dark:text-gray-200 text-sm !important;
+  }
+}
+
+@layer components {
+  .choices__list {
+    @apply bg-gray-50 dark:bg-gray-700 dark:text-gray-200 !important;
+  }
+}
+
+@layer components {
+  .choices__item {
+    @apply bg-transparent dark:text-gray-200 !important;
+  }
+}
+
+@layer components {
+  .choices__placeholder {
+    @apply bg-transparent dark:text-gray-200 truncate !important;
+  }
+}
+
+@layer components {
+  .is-highlighted {
+    @apply bg-gray-200 dark:bg-gray-600 text-purple-500 dark:text-purple-500 font-medium !important;
+  }
+}
