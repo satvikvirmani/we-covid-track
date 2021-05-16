@@ -98,10 +98,10 @@ class CountryInput extends React.Component {
         const {activeIndex, matches, query} = this.state;
 
         return (
-            <div className="w-64 h-8 relative mx-2 flex flex-row items-center">
+            <div className="w-60 h-8 relative mx-2">
                 <input
                     type="text"
-                    className="flex-grow p-2 rounded-md dark:bg-gray-800 dark:text-gray-400 ring-2 ring-purple-400 focus:ring-4 focus:ring-purple-500 focus:outline-none dark:focus:ring-4 dark:focus:ring-purple-500 dark:focus:outline-none border-0"
+                    className="w-60 h-8 p-2 rounded-md dark:bg-gray-800 dark:text-gray-400 ring-2 ring-purple-400 focus:ring-4 focus:ring-purple-500 focus:outline-none dark:focus:ring-4 dark:focus:ring-purple-500 dark:focus:outline-none border-0"
                     name="country-search"
                     onChange={this.updateQuery}
                     onKeyDown={this.handleKeyPress}
