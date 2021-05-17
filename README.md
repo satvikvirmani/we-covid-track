@@ -9,7 +9,7 @@
   </a>
 </p>
 
-> A simple Covid 19 informative website
+> A Covid 19 informative website
 
 ### 🏠 [Homepage](https://github.com/SatvikVirmani/we-covid-track)
 
