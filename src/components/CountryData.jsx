@@ -26,7 +26,7 @@ class CountryData extends Component {
         var axios = require('axios');
         var config = {
             method: 'get',
-            url: 'https://disease.sh/v3/covid-19/countries/' + code + '?yesterday=false&strict=false',
+            url: 'https://disease.sh/v3/covid-19/countries/' + code + '?yesterday=true&strict=false',
             headers: {}
         };
 
