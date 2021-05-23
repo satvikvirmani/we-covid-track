@@ -22,7 +22,7 @@ class GlobalData extends Component {
         var axios = require('axios');
         var config = {
             method: 'get',
-            url: 'https://corona.lmao.ninja/v3/covid-19/all',
+            url: 'https://corona.lmao.ninja/v3/covid-19/all?yesterday=true',
             headers: {}
         };
 
