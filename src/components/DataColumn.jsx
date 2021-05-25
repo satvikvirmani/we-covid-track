@@ -25,7 +25,7 @@ const DataColumn = (props) => {
                     color: props.color
                 }}>{props.todayData}</p>
                 <p
-                    className="text-2xl sm:text-3xl font-bold slashed-zero"
+                    className="text-2xl sm:text-3xl font-semibold slashed-zero"
                     style={{
                     color: props.color
                 }}>{props.totalData}</p>
