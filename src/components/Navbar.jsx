@@ -13,6 +13,8 @@ const Navbar = () => {
             <nav className="py-2 px-4 flex flex-row justify-between items-center">
                 <a href="/">
                     <img
+                        width="205"
+                        height="48"
                         src="https://res.cloudinary.com/wecloud/image/upload/c_scale,h_48/v1621147239/we-covid-track/logo_kae2ot.webp"
                         alt="Covid Track"/>
                 </a>
