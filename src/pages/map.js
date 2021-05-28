@@ -4,6 +4,10 @@ import Navbar from "../components/Navbar"
 import Footer from '../components/Footer';
 import SEO from "../components/seo"
 
+if (typeof window !== 'undefined'){
+    document.documentElement.lang = "en"
+}
+
 const MapPage = () => {
     return (
         <React.Fragment>

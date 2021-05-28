@@ -2,6 +2,10 @@ import React from 'react';
 import {Link} from "gatsby"
 import SEO from "../components/seo"
 
+if (typeof window !== 'undefined'){
+    document.documentElement.lang = "en"
+}
+
 const NotFoundPage = () => {
     return (
         <React.Fragment>

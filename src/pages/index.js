@@ -5,6 +5,10 @@ import News from "../components/News"
 import Footer from '../components/Footer';
 import SEO from "../components/seo"
 
+if (typeof window !== 'undefined'){
+    document.documentElement.lang = "en"
+}
+
 const IndexPage = () => {
     return (
         <React.Fragment>

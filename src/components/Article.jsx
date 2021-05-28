@@ -11,7 +11,7 @@ const Article = (props) => {
                 scale: 1.05
             }}>
                 <div className="max-w-6xl w-full lg:w-80 grid place-items-center">
-                    <LazyLoadImage src={props.imageSrc} className="w-full sm:w-72 lg:w-full"/>
+                    <LazyLoadImage src={props.imageSrc} className="w-full sm:w-72 lg:w-full" alt="newsImage"/>
                 </div>
                 <div className="flex-1 flex flex-col items-start gap-6 justify-between">
                     <p className="text-2xl dark:text-gray-200">

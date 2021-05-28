@@ -5,6 +5,10 @@ import SEO from "../components/seo"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faGithub, faMedium, faFacebook, faInstagram} from '@fortawesome/free-brands-svg-icons'
 
+if (typeof window !== 'undefined'){
+    document.documentElement.lang = "en"
+}
+
 const DeveloperPage = () => {
     return (
         <React.Fragment>

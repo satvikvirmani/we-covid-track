@@ -34,6 +34,7 @@ const Navbar = () => {
                     <ThemeToggle/>
                 </div>
                 <button
+                    name="toggleMenuBtn"
                     className="md:hidden p-2 dark:text-gray-400 rounded-md dark:hover:text-white focus:outline-none focus:ring-2 dark:focus:ring-purple-500 dark:hover:bg-gray-700"
                     onClick={() => {
                     setMobile(!isMobile)
