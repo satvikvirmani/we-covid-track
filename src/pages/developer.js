@@ -26,7 +26,7 @@ const DeveloperPage = () => {
                                 className="h-80 w-80"/>
                         </div>
                         <div className="flex flex-col justify-between h-96 px-4 w-80 md:px-0">
-                            <h1 className="text-4xl text-center dark:text-gray-200 font-medium">Satvik Virmani</h1>
+                            <h1 className="text-4xl text-center dark:text-gray-200 font-medium">Sanyam Virmani & Satvik Virmani</h1>
                             <div className="grid grid-cols-2 gap-4 dark:text-gray-300">
                                 <div
                                     className="dark:hover:text-purple-500 hover:text-purple-500 text-center font-semibold">
@@ -50,7 +50,7 @@ const DeveloperPage = () => {
                                 </div>
                             </div>
                             <p className="text-base dark:text-gray-400">
-                                Hii, I'm a 17 year old high school senior in India. I created this website
+                                Hii, I'm a 19 year old collage student in India. I created this website
                                 keeping simplicity and efficiency in mind. It can run on any device without any
                                 issue. I will be providing constant updates to both design and usability of
                                 website from time to time
