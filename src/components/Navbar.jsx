@@ -78,7 +78,7 @@ const Navbar = () => {
                 <OutboundLink
                     href="https://github.com/SatvikVirmani/we-covid-track"
                     className="w-full h-full text-left text-base dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:text-gray-500 py-2 px-4">
-                    <FontAwesomeIcon icon={faGithub}/>
+                    <FontAwesomeIcon icon={faGithub} className="mx-2/>
                     View on Github
                 </OutboundLink>
                 <ThemeToggle/>
