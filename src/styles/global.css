@@ -22,7 +22,7 @@
   }
 }
 
-@layer components {
+@layer components{
   .choices__list {
     @apply bg-gray-50 dark:bg-gray-700 dark:text-gray-200 !important;
   }
