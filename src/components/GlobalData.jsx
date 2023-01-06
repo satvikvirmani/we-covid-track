@@ -5,13 +5,13 @@ import {GlobalGraphTotal, GlobalGraphRecovered, GlobalGraphCritical, GlobalGraph
 class GlobalData extends Component {
     state = {
         GlobalData: {
-            "cases": "Loading",
-            "recovered": "Loading",
-            "critical": "Loading",
-            "deaths": "Loading",
-            "todayCases": "Loading",
-            "todayRecovered": "Loading",
-            "todayDeaths": "Loading",
+            "TotalCases": "Loading",
+            "NewCases": "Loading",
+            "TotalRecovered": "Loading",
+            "NewRecovered": "Loading",
+            "ActiveCases": "Loading",
+            "TotalDeaths": "Loading",
+            "NewDeaths": "Loading",
             childAnimate: false
         }
     }
@@ -21,13 +21,16 @@ class GlobalData extends Component {
     fetchGlobalData = () => {
         var axios = require('axios');
         var config = {
-            method: 'get',
-            url: 'https://corona.lmao.ninja/v3/covid-19/all?yesterday=true',
-            headers: {}
+            method: 'GET',
+            url: 'https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/npm-covid-data/world',
+            headers: {
+              'X-RapidAPI-Key': '5cefe9975dmsh908a1edb2653d53p146c4djsne6cc8fbe18f4',
+              'X-RapidAPI-Host': 'vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com'
+            }
         };
 
         axios(config).then((response) => {
-            this.setState({GlobalData: response.data, childAnimate: true})
+            this.setState({GlobalData: response.data[0], childAnimate: true})
         }).catch((error) => {
             console.log(error)
         })
@@ -48,30 +51,23 @@ class GlobalData extends Component {
                         color="#03D9FE"
                         label="Total"
                         todayData={`+${this
-                        .state
-                        .GlobalData
-                        .todayCases
-                        .toLocaleString()}`}
-                        totalData={this
-                        .state
-                        .GlobalData
-                        .cases
-                        .toLocaleString()}>
+                            .state
+                            .GlobalData
+                            .NewCases.toLocaleString()
+                            }`}
+                        totalData={`+${
+                            this.state.GlobalData.TotalCases.toLocaleString()
+                            }`}>
                         <GlobalGraphTotal color="#03D9FE" animateNow={this.state.childAnimate}/>
                     </DataColumn>
                     <DataColumn
                         color="#2DFA7C"
                         label="Recovered"
-                        todayData={`+${this
-                        .state
-                        .GlobalData
-                        .todayRecovered
-                        .toLocaleString()}`}
-                        totalData={this
-                        .state
-                        .GlobalData
-                        .recovered
-                        .toLocaleString()}>
+                        todayData={`+${
+                            this.state.GlobalData.NewRecovered.toLocaleString()
+                            }`}
+                        totalData={`+${
+                            isNaN(this.state.GlobalData.TotalRecovered) ? this.state.GlobalData.TotalRecovered.toLocaleString() : parseInt(this.state.GlobalData.TotalRecovered).toLocaleString()}`}>
                         <GlobalGraphRecovered color="#2DFA7C" animateNow={this.state.childAnimate}/>
                     </DataColumn>
                 </div>
@@ -80,26 +76,20 @@ class GlobalData extends Component {
                         color="#BFD200"
                         label="Critical"
                         todayData="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
-                        totalData={this
-                        .state
-                        .GlobalData
-                        .critical
-                        .toLocaleString()}>
+                        totalData={`+${
+                            this.state.GlobalData.ActiveCases.toLocaleString()
+                            }`}>
                         <GlobalGraphCritical color="#BFD200" animateNow={this.state.childAnimate}/>
                     </DataColumn>
                     <DataColumn
                         color="#FB6376"
                         label="Deaths"
-                        todayData={`+${this
-                        .state
-                        .GlobalData
-                        .todayDeaths
-                        .toLocaleString()}`}
-                        totalData={this
-                        .state
-                        .GlobalData
-                        .deaths
-                        .toLocaleString()}>
+                        todayData={`+${
+                            this.state.GlobalData.NewDeaths.toLocaleString()
+                            }`}
+                        totalData={`+${
+                            this.state.GlobalData.TotalDeaths.toLocaleString()
+                            }`}>
                         <GlobalGraphDeaths color="#FB6376" animateNow={this.state.childAnimate}/>
                     </DataColumn>
                 </div>
